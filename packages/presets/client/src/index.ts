@@ -118,6 +118,7 @@ export const preset: Types.OutputPreset<ClientPresetConfig> = {
 
     // the `client` preset is restricting the config options inherited from `typescript`, `typescript-operations` and others.
     const forwardedConfig = {
+      maybeValue: options.config.maybeValue,
       scalars: options.config.scalars,
       defaultScalarType: options.config.defaultScalarType,
       strictScalars: options.config.strictScalars,
